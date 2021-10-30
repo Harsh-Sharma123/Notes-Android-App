@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notesapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notesicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/notesicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotesApp">
+        <activity
+            android:name=".noteDetails"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".editnoteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".CreateNote"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Notes"
+            android:exported="true" />
+        <activity
+            android:name=".forgotpassword"
+            android:exported="true" />
+        <activity
+            android:name=".signup"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
